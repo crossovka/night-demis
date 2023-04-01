@@ -12,7 +12,7 @@
 <body>
 
 	<div class="wrapper">
-		<header style="margin-bottom: 1000px">
+		<header>
 			<div class="header__container">
 				<div class="header__inner">
 					<a href="#" class="header__logo">
@@ -24,10 +24,9 @@
 							<li><a href="./pages/about.html" class="menu__link">Группа vk</a></li>
 							<li><a href="" class="menu__link">Отзывы</a></li>
 							<li><a href="#projects" class="menu__link">Связаться</a></li>
-							<div class="menu__cart">Cart</div>
-							<!-- <div class="menu__link menu__link--cart">
-								<img src="./img/cart.svg" alt="" class="menu__link--cart__img">
-							</div> -->
+							<li class="menu__link menu__link--cart">
+								<img src="./img/cart.svg" alt="" id='cart' class="cart">
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -41,15 +40,66 @@
 		</div> -->
 
 		<main class="main">
-			<div class="main__container">
-				<section class="intro">
-					<intro class="container">
-						<div class="intro__logo">
-							<img src="./img/close.png" alt="">
+			<section class="intro">
+				<intro class="intro__container">
+					<div class="intro__logo">
+						<img src="./img/close.png" alt="">
+					</div>
+				</intro>
+			</section>
+
+			<section class="products">
+				<div class="products__container">
+					<div class="products__content">
+						<div class="content__filter">
+							<button class="filter__item active" data-filter="*" type="button">Все</button>
+							<button class="filter__item" data-filter="tishka" type="button">Футболки</button>
+							<button class="filter__item" data-filter="denis" type="button">Членогрейки</button>
+							<button class="filter__item" data-filter="cap" type="button">Микраховские кепки</button>
 						</div>
-					</intro>
-				</section>
-			</div>
+
+						<div class="content__cards">
+							<article class="cards__item">
+								<a href="" class="item__image">
+									<img src="./img/prod.PNG" alt="Товар">
+								</a>
+								<div class="item__body">
+									<div class="body__name">Кепка дена</div>
+									<div class="body__price">40.334</div>
+								</div>
+							</article>
+							<article class="cards__item">
+								<a href="" class="item__image">
+									<img src="./img/cart.svg" alt="Товар">
+								</a>
+								<div class="item__body">
+									<div class="body__name">Штаны торбочки</div>
+									<div class="body__price">343434</div>
+								</div>
+							</article>
+							<article class="cards__item">
+								<a href="" class="item__image">
+									<img src="./img/prod.PNG" alt="Товар">
+								</a>
+								<div class="item__body">
+									<div class="body__name">Облеваные тапки пашгена</div>
+									<div class="body__price">777777</div>
+								</div>
+							</article>
+							<article class="cards__item">
+								<a href="" class="item__image">
+									<img src="./img/close.png" alt="Товар">
+								</a>
+								<div class="item__body">
+									<div class="body__name">Трусы Вяча</div>
+									<div class="body__price">666.99</div>
+								</div>
+							</article>
+						</div>
+
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<footer>
@@ -63,13 +113,12 @@
 
 	<script src="./scripts/main.js"></script>
 
+	<script src="./scripts/filtering.js"></script>
+
 	<script src="./scripts/cart.js"></script>
 
-	<!-- бургер меню -->
-	<script src="./scripts/burger.js"></script>
-
 	<!-- якоря по сайту -->
-	<script src="./scripts/yakor.js"></script>
+	<!-- <script src="./scripts/yakor.js"></script> -->
 
 </body>
 
