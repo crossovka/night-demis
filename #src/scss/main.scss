@@ -1,0 +1,44 @@
+/*  ---------------------------------------  */
+
+// шрифт с google fonts
+
+/*  -------------------  */
+
+// обнуление
+@import "null.scss";
+
+// переменные и переиспользование по bem
+@import "vars.scss";
+
+// ограничивающие контейнеры
+@import "containers.scss";
+
+/*  -------- блоки на сайте --------------  */
+
+@import "./blocks/header.scss";
+
+@import "./blocks/intro.scss";
+
+html,
+body {
+	font-family: "Roboto Slab";
+	font-size: 18px;
+	color: #ffffff;
+	background-color: #292727;
+
+	// для того, чтобы когда модальное окно открывалось у боди не было скрола когда буду вызывать модальное боди буду выдаватьь этот класс
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+.wpapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	// overflow-x: hidden;
+}
+main {
+	flex: 1 1 auto;
+	// прижал footer у низу
+}
