@@ -5,21 +5,17 @@
 /*  -------------------  */
 
 // обнуление
-@import "null.scss";
+@import "../null.scss";
 
 // переменные и переиспользование по bem
-@import "vars.scss";
+@import "../vars.scss";
 
 // ограничивающие контейнеры
-@import "containers.scss";
+@import "../containers.scss";
 
 /*  -------- блоки на сайте --------------  */
 
-@import "./blocks/header.scss";
-
-@import "./blocks/intro.scss";
-
-@import "./blocks/products.scss";
+@import "./product_header.scss";
 
 /*  --------                --------------  */
 
@@ -28,8 +24,8 @@ body {
 	font-family: "Roboto Slab";
 	font-size: 18px;
 	color: #ffffff;
-	background-color: #000000;
-	// background-color: #ffffff;
+	// background-color: #000000;
+	background-color: #ffffff;
 
 	// для того, чтобы когда модальное окно открывалось у боди не было скрола когда буду вызывать модальное боди буду выдаватьь этот класс
 	&.no-scroll {
@@ -46,4 +42,16 @@ body {
 main {
 	flex: 1 1 auto;
 	// прижал footer у низу
+}
+
+.wrap {
+	width: 100%;
+	background-color: #5d2c2c;
+	display: flex;
+	flex-direction: row;
+	&__sliders {
+	}
+
+	&__description {
+	}
 }

@@ -24,10 +24,13 @@
 	}
 
 	&__cards {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 20px;
+		// display: flex;
+		// flex-direction: row;
+		// justify-content: space-around;
+		// flex-wrap: wrap;
 	}
 }
 .filter {
@@ -51,27 +54,37 @@
 
 .cards {
 	&__item {
-		flex-basis: (25% - 20px);
-		padding: 10px;
+		// flex-basis: (25% - 20);
+		// flex-basis: 25%;
+		// padding: 10px;
+		display: flex;
+		flex-direction: column;
+		background-color: #dcabab;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
 	}
 }
 .item {
 	&__image {
-		width: 350px;
-		height: 350px;
+		width: 100%;
+		height: auto;
 		display: block;
-		margin-bottom: 1.8rem;
+		margin-bottom: 0.5rem;
+
+		// display: flex;
+		// justify-content: center;
 
 		overflow: hidden;
-		// position: relative;
+		position: relative;
 		padding: 0.3rem;
 		img {
 			// position: absolute;
+			// top: 0;
+			// left: 0;
+			object-fit: cover;
 			max-width: 100%;
 			max-height: 100%;
-			top: 0;
-			left: 0;
-			object-fit: cover;
 			transition: transform 0.3s;
 			&:hover {
 				transform: scale(1.03);
@@ -88,7 +101,7 @@
 	&__name {
 		display: flex;
 		justify-content: center;
-		background-color: #937a7a;
+		// background-color: #937a7a;
 		color: black;
 		font-weight: 900;
 		font-size: 1rem;
@@ -98,7 +111,7 @@
 	&__price {
 		display: flex;
 		justify-content: center;
-		background-color: #cca5a5;
+		// background-color: #cca5a5;
 		line-height: 1.6;
 		color: black;
 		font-size: 1rem;

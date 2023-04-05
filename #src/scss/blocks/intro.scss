@@ -1,12 +1,36 @@
 .intro {
+	// z-index: 999999;
 	// transform: translateY(-87px);
-	height: 100vh;
+	// background-color: #0000;
+	background-color: #eedcdc;
+	// background-image: url(../img/intro_img.jpg);
+	// background-position: center;
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		// height: 100%;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+			// max-width: 5;
+			// max-height: initial;
+			// display: block;
+			// object-fit: cover;
+		}
 	}
 }
+
+// @media (max-width: 1306.98px) {
+// }
 
 // .cart-wrapper {
 // 	position: absolute;
