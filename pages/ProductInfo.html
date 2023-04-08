@@ -14,7 +14,7 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__inner">
-					<a href="#" class="header__logo">
+					<a href="../index.html" class="header__logo">
 						<img src="../img/logo.png" alt="logo" />
 						<!-- мб сделать лого черезщ текст и span и спан юзать повторно -->
 					</a>
@@ -35,46 +35,41 @@
 			<div class="main__container">
 				<div class="main__wrap">
 					<div class="wrap__sliders">
-						<div class="slider-For">
-							<div class="slider-For__slide">
+						<div class="sliders__slider">
+							<div class="slider__item">
+								<img data-lazy="../img/logo.jpg" alt="" class="item__image" />
 								<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
-								<div class="slider-For__image">
-									<img data-lazy="../img/logo.jpg" alt="" class="image__img" />
-								</div>
 							</div>
-							<div class="slider-For__slide">
-								<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
-								<div class="sliderFor__image">
-									<img data-lazy="../img/logo.jpg" alt="" class="image__img" />
-								</div>
+							<div class="slider__item">
+								<img data-lazy="../img/pdoduct_img.jpg" alt="" class="item__image" />
 							</div>
-						</div>
-						<div class="slider-Nav">
-							<div class="slider-Nav__slide">
-								<!-- <div class="content__photo" style="background-image: url(./img/logo.svg)"></div> -->
-								<div class="slider-Nav__image">
-									<img data-lazy="../img/logo.jpg" alt="" class="image__img" />
-								</div>
+							<div class="slider__item">
+								<img data-lazy="../img/cart.svg" alt="" class="item__image" />
 							</div>
 						</div>
 					</div>
 					<div class="wrap__description">
 						<div class="description__title-block">
 							<div class="title-block__title">
-								<h1>Кепка Дена</h1>
+								<h1>
+									<!-- Кепка Дена -->
+								</h1>
 							</div>
-							<div class="title-block__price">9999</div>
+							<div class="title-block__price">
+								<!-- 9999 Р -->
+							</div>
 							<div class="button">
-								<button id="inCart" class="title-block__button">
-									В корЗиночку
-									<img src="../img/Right-Arrow.svg" alt="" class="button__right-arrow" />
+								<button id="inCart" class="button__btn">
+									в корзину
 								</button>
 							</div>
 						</div>
 						<div class="description__content">
-							<div class="content__text">Только микраховские шарят за стайл.Выкупаешь,чел???? Только они
+							<div class="content__text">
+								<!-- Только микраховские шарят за стайл.Выкупаешь,чел???? Только -->
+								<!-- они
 								ходят как арсенчик из АПК
-								(амурский пидорастический кал), да так, что на бошке(бошки черные) следы остаются
+								(амурский пидорастический кал), да так, что на бошке(бошки черные) следы остаются -->
 							</div>
 							<div class="content__sizes">
 								<img src="../img/pdoduct_img.jpg" alt="" class="sizes__img">
@@ -82,9 +77,16 @@
 						</div>
 					</div>
 				</div>
-			</div>
 		</main>
 	</div>
+
+	<script src="../scripts/cards/cards_content.js"></script>
+	<script src="../scripts/cards/product_content.js"></script>
+	<script src="../libs/jquery/jquery-3.6.1.min.js"></script>
+	<link rel="stylesheet" href="../libs/slick/slick.css" />
+	<link rel="stylesheet" href="../libs/slick/slick-theme.css" />
+	<script src="../libs/slick/slick.min.js"></script>
+	<script src="../scripts/slider.js"></script>
 </body>
 
 </html>

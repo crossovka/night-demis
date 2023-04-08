@@ -17,6 +17,10 @@
 
 @import "./product_header.scss";
 
+@import "./product_description.scss";
+
+@import "./product_sliders.scss";
+
 /*  --------                --------------  */
 
 html,
@@ -43,15 +47,13 @@ main {
 	flex: 1 1 auto;
 	// прижал footer у низу
 }
-
-.wrap {
-	width: 100%;
-	background-color: #5d2c2c;
-	display: flex;
-	flex-direction: row;
-	&__sliders {
-	}
-
-	&__description {
+// ================================
+.main {
+	&__wrap {
+		width: 100%;
+		// background-color: aqua;
+		// height: 100%;
+		display: flex;
+		flex-direction: row;
 	}
 }
