@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>night demis</title>
 	<link rel="stylesheet" href="./styles/main.css">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.css" /> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -21,12 +23,12 @@
 					</a>
 					<nav class="header__menu">
 						<ul class="menu__list">
-							<li><a href="./pages/about.html" class="menu__link">Группа vk</a></li>
+							<li><a href="./pages/about.html" class="menu__link">ГруппаVk</a></li>
 							<li><a href="" class="menu__link">Отзывы</a></li>
 							<li><a href="#projects" class="menu__link">Связаться</a></li>
-							<li class="menu__link menu__link--cart">
+							<!-- <li class="menu__link menu__link--cart">
 								<img src="./img/cart.svg" alt="" id='cart' class="cart">
-							</li>
+							</li> -->
 						</ul>
 					</nav>
 				</div>
@@ -52,18 +54,29 @@
 				<div class="products__container">
 					<div class="products__content">
 						<div class="content__filter">
-							<button class="filter__item active" data-filter="*" type="button">Все</button>
-							<button class="filter__item" data-filter="tishka" type="button">Футболки</button>
-							<button class="filter__item" data-filter="denis" type="button">Членогрейки</button>
-							<button class="filter__item" data-filter="cap" type="button">Микраховские кепки</button>
+							<button class="filter__item" data-filter="*" type="button">Все</button>
+							<button class="filter__item" data-filter="category-1" type="button">Футболки</button>
+							<button class="filter__item" data-filter="category-2" type="button">Членогрейки</button>
+							<button class="filter__item" data-filter="category-3" type="button">Микраховские
+								кепки</button>
 						</div>
 
 						<div class="content__cards">
 							<!-- <article class="cards__item item">
-								<a href="./pages/ProductInfo.html" class="item__image">
+								<a href="./pages/ProductInfo.html" data-category="category1" class="item__image">
 									<img src="./img/pdoduct_img.jpg" alt="Товар">
 								</a>
 								<div class="item__body item">
+									<div class="body__name">Кепка дена</div>
+									<div class="body__price">40.334</div>
+								</div>
+							</article> -->
+							<!-- ==================================================================================== -->
+							<!-- <article class="cards__item">
+								<a href="./pages/ProductInfo.html" data-category="category1" class="item__image">
+									<img src="./img/pdoduct_img.jpg" alt="Товар">
+								</a>
+								<div class="item__body">
 									<div class="body__name">Кепка дена</div>
 									<div class="body__price">40.334</div>
 								</div>
@@ -84,11 +97,11 @@
 
 	<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
 
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
 	<script src="./scripts/cards/cards.js"></script>
 	<script src="./scripts/cards/cards_content.js"></script>
 
+	<script src="./libs/isotope/isotope.pkgd.min.js"></script>
 	<script src="./scripts/filtering.js"></script>
 
 	<script src="./scripts/cart.js"></script>

@@ -44,14 +44,44 @@
 // 	return a;
 // }
 
-function generate_card(id, img, imgAlt, name, price) {
+// function generate_card(id, img, imgAlt, name, price, category) {
+// 	const article = document.createElement('article');
+// 	article.className = 'cards__item item';
+// 	article.innerHTML = `
+// 	  <a href="./pages/ProductInfo.html?id=${id}" data-category="${category}" class="item__image">
+// 		<img src="${img}" alt="${imgAlt}">
+// 	  </a>
+// 	  <div class="item__body item">
+// 		<div class="body__name">${name}</div>
+// 		<div class="body__price">${price}</div>
+// 	  </div>`;
+// 	console.log(article);
+// 	return article;
+// }
+
+// // ВНУТРЕННЯЯ БАЗА ДАННЫХ ПРОЕКТОВ!!!
+// class Cards {
+// 	_cards;
+// 	constructor() {
+// 		this._cards = document.getElementsByClassName('content__cards')[0];
+// 	}
+// 	addCard(id, img, imgAlt, name, price) {
+// 		const card = generate_card(id, img, imgAlt, name, price, category);
+// 		this._cards.appendChild(card);
+// 	}
+// }
+
+// const cards = new Cards();
+
+function generate_card(id, img, imgAlt, name, price, category) {
 	const article = document.createElement('article');
-	article.className = 'cards__item item';
+	article.className = 'cards__item';
+	article.dataset.category = category;
 	article.innerHTML = `
-	  <a href="./pages/ProductInfo.html?id=${id}" class="item__image">
+	  <a href="./pages/ProductInfo.html?id=${id}" target="_blank" class="item__image">
 		<img src="${img}" alt="${imgAlt}">
 	  </a>
-	  <div class="item__body item">
+	  <div class="item__body">
 		<div class="body__name">${name}</div>
 		<div class="body__price">${price}</div>
 	  </div>`;
@@ -65,15 +95,10 @@ class Cards {
 	constructor() {
 		this._cards = document.getElementsByClassName('content__cards')[0];
 	}
-	addCard(id, img, imgAlt, name, price) {
-		const card = generate_card(id, img, imgAlt, name, price);
+	addCard(id, img, imgAlt, name, price, category) {
+		const card = generate_card(id, img, imgAlt, name, price, category);
 		this._cards.appendChild(card);
 	}
 }
 
 const cards = new Cards();
-
-// const queryString = window.location.search;
-// const urlParams = new URLSearchParams(queryString);
-// const id = urlParams.get('id');
-// console.log(id); // выводит "2", если URL - "lol.com/login?id=2"

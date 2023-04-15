@@ -5,7 +5,7 @@
 		width: 50%;
 		height: 100%;
 		// min-height: 100%;
-		padding: 0 40px;
+		padding: 0 0 0 40px;
 
 		display: flex;
 		flex-direction: column;
@@ -22,11 +22,17 @@
 	display: flex;
 	align-self: flex-start;
 	&__title {
-		font-size: 2.5rem;
+		// font-size: 50px;
+		font-size: calc(34px + (16 + 16 * 0.7) * ((100vw - 991.98px) / 1606));
+		font-weight: 900;
 	}
 
 	&__price {
 		margin-top: 1rem;
+
+		font-weight: 500;
+		// font-size: 18px; 23 33
+		font-size: calc(23px + (10 + 10 * 0.7) * ((100vw - 991.98px) / 1606));
 	}
 }
 .button {
@@ -40,7 +46,7 @@
 		padding: 10px;
 		border-radius: 15px;
 
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		color: white;
 
 		background-color: black;
@@ -51,14 +57,16 @@
 		margin-top: 2rem;
 
 		// font-size: 40px;
-		font-size: calc(20px + 15 * (100vw / 1280));
+		font-size: calc(22px + (15 + 15 * 0.7) * ((100vw - 320px) / 1606));
 	}
 
 	&__sizes {
 		img {
-			display: block;
-			width: 50%;
-			height: 50%;
+			width: 100px;
+			height: auto;
+			// display: block;
+			// width: 50%;
+			// height: 50%;
 		}
 	}
 }

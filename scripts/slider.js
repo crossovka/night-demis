@@ -76,13 +76,42 @@
 // 	// });
 // 	// $('.slider').slick('setPosition');
 // });
+
 // инициализация jquery
-$(document).ready(function () {
-	$('.sliders__slider').slick({
-		// adaptiveHeight: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: true,
-		fade: true,
-	});
-});
+// $(document).ready(function () {
+// 	$('.sliders__slider').slick({
+// 		// adaptiveHeight: true,
+// 		slidesToShow: 1,
+// 		slidesToScroll: 1,
+// 		arrows: true,
+// 		fade: true,
+// 		responsive: [
+// 			{
+// 				// мобилки
+// 				breakpoint: 767.98,
+// 				settings: {
+// 					slidesToShow: 1,
+// 					slidesToScroll: 1,
+// 					speed: 900,
+// 					autoplaySpeed: 1800,
+// 					easing: true,
+// 				},
+// 			},
+// 			// {
+// 			// 	// мобилки поменьше
+// 			// 	breakpoint: 565.98,
+// 			// 	settings: {
+// 			// 		dots: false,
+// 			// 		slidesToShow: 1,
+// 			// 		slidesToScroll: 1,
+// 			// 		speed: 900,
+// 			// 		autoplaySpeed: 1000,
+// 			// 		easing: true,
+// 			// 	},
+// 			// },
+// 			// You can unslick at a given breakpoint now by adding:
+// 			// settings: "unslick"
+// 			// instead of a settings object
+// 		],
+// 	});
+// });

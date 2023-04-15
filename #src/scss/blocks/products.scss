@@ -1,9 +1,136 @@
-.products {
-	background-color: #fff;
-	padding: 50px 0 50px;
-	&__container {
-	}
+// .products {
+// 	background-color: #fff;
+// 	padding: 50px 0 50px;
+// 	&__container {
+// 	}
 
+// 	&__content {
+// 		display: flex;
+// 		flex-direction: column;
+// 		justify-content: center;
+// 	}
+// }
+// .content {
+// 	&__filter {
+// 		margin-bottom: 1.25rem;
+
+// 		display: flex;
+// 		align-items: center;
+// 		justify-content: center;
+
+// 		column-gap: 1.5rem;
+// 		row-gap: 0.3rem;
+// 		flex-wrap: wrap;
+// 	}
+
+// 	&__cards {
+// 		display: grid;
+// 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+// 		gap: 20px;
+// 		// display: flex;
+// 		// flex-direction: row;
+// 		// justify-content: space-around;
+// 		// flex-wrap: wrap;
+// 	}
+// }
+// .filter {
+// 	&__item {
+// 		// font-size: 20px;
+// 		font-size: calc(19px + (5 + 5 * 0.7) * ((100vw - 320px) / 1606));
+// 		line-height: 2;
+
+// 		transition: all 0.3s;
+
+// 		color: #c4c4c4;
+// 		background: transparent;
+// 		&:hover {
+// 			color: #495057;
+// 		}
+// 		&:active {
+// 			color: #495057;
+// 		}
+// 	}
+// }
+
+// .active {
+// }
+
+// .cards {
+// 	&__item {
+// 		// flex-basis: (25% - 20);
+// 		// flex-basis: 25%;
+// 		// padding: 10px;
+// 		display: flex;
+// 		flex-direction: column;
+
+// 		border-radius: 5px;
+// 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+// 		overflow: hidden;
+// 	}
+// }
+// .item {
+// 	&__image {
+// 		width: 100%;
+// 		height: auto;
+// 		display: block;
+// 		margin-bottom: 0.5rem;
+
+// 		// display: flex;
+// 		// justify-content: center;
+
+// 		overflow: hidden;
+// 		position: relative;
+// 		padding: 0.3rem;
+// 		img {
+// 			// position: absolute;
+// 			// top: 0;
+// 			// left: 0;
+// 			object-fit: cover;
+// 			max-width: 100%;
+// 			max-height: 100%;
+// 			transition: transform 0.3s;
+// 			&:hover {
+// 				transform: scale(1.03);
+// 			}
+// 		}
+// 	}
+
+// 	&__body {
+// 	}
+// }
+// .body {
+// 	display: flex;
+// 	flex-direction: column;
+// 	&__name {
+// 		// background-color: #937a7a;
+// 		display: flex;
+// 		justify-content: center;
+
+// 		// font-size: 1rem;
+// 		// font-size: 36px;
+// 		font-size: calc(17px + (14 + 14 * 0.7) * ((100vw - 320px) / 1606));
+// 		font-weight: 900;
+// 		line-height: 1.6;
+// 		color: black;
+// 	}
+
+// 	&__price {
+// 		// background-color: #cca5a5;
+// 		display: flex;
+// 		justify-content: center;
+
+// 		// font-size: 24px;
+// 		font-size: calc(17px + (7 + 7 * 0.7) * ((100vw - 320px) / 1606));
+// 		line-height: 1.6;
+// 		color: black;
+// 	}
+// }
+
+// =================================
+.products {
+	padding: 50px 0 50px;
+
+	background-color: #fff;
 	&__content {
 		display: flex;
 		flex-direction: column;
@@ -13,11 +140,11 @@
 .content {
 	&__filter {
 		margin-bottom: 1.25rem;
+
 		display: flex;
 		align-items: center;
 		justify-content: center;
 
-		align-items: center;
 		column-gap: 1.5rem;
 		row-gap: 0.3rem;
 		flex-wrap: wrap;
@@ -35,9 +162,12 @@
 }
 .filter {
 	&__item {
-		font-size: 1.1rem;
+		// font-size: 20px;
+		font-size: calc(19px + (5 + 5 * 0.7) * ((100vw - 320px) / 1606));
 		line-height: 2;
+
 		transition: all 0.3s;
+
 		color: #c4c4c4;
 		background: transparent;
 		&:hover {
@@ -48,23 +178,31 @@
 		}
 	}
 }
-
 .active {
 }
-
 .cards {
 	&__item {
 		// flex-basis: (25% - 20);
 		// flex-basis: 25%;
 		// padding: 10px;
+		
 		display: flex;
 		flex-direction: column;
-		background-color: #dcabab;
+
 		border-radius: 5px;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		
 		overflow: hidden;
+
+		opacity: 0;
+		transition: opacity .5s ease-in-out;
 	}
 }
+
+.cards__item.show {
+	opacity: 1;
+}
+
 .item {
 	&__image {
 		width: 100%;
@@ -98,22 +236,28 @@
 .body {
 	display: flex;
 	flex-direction: column;
+
 	&__name {
+		// background-color: #937a7a;
 		display: flex;
 		justify-content: center;
-		// background-color: #937a7a;
-		color: black;
+
+		// font-size: 1rem;
+		// font-size: 36px;
+		font-size: calc(17px + (14 + 14 * 0.7) * ((100vw - 320px) / 1606));
 		font-weight: 900;
-		font-size: 1rem;
 		line-height: 1.6;
+		color: black;
 	}
 
 	&__price {
+		// background-color: #cca5a5;
 		display: flex;
 		justify-content: center;
-		// background-color: #cca5a5;
+
+		// font-size: 24px;
+		font-size: calc(17px + (7 + 7 * 0.7) * ((100vw - 320px) / 1606));
 		line-height: 1.6;
 		color: black;
-		font-size: 1rem;
 	}
 }
