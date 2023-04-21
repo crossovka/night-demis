@@ -25,10 +25,10 @@
 
 html,
 body {
-	font-family: "Roboto Slab";
+	font-family: $font-family;
 	font-size: 18px;
-	color: #ffffff;
-	background-color: #000000;
+	color: $primary-f-color;
+	background-color: $main-bgc-color;
 	// background-color: #ffffff;
 
 	// для того, чтобы когда модальное окно открывалось у боди не было скрола когда буду вызывать модальное боди буду выдаватьь этот класс

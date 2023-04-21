@@ -89,6 +89,9 @@ function generate_card(id, img, imgAlt, name, price, category) {
 	return article;
 }
 
+{
+	/* <a href="./pages/ProductInfo.html?id=${id}" target="_blank" class="body__name">${name}</a>*/
+}
 // ВНУТРЕННЯЯ БАЗА ДАННЫХ ПРОЕКТОВ!!!
 class Cards {
 	_cards;

@@ -68,6 +68,18 @@ function fillProductInfo(id) {
 		// adaptiveHeight: true,
 		lazyLoad: 'ondemand',
 		lazyLoadBuffer: 0,
+		responsive: [
+			{
+				// мобилки
+				breakpoint: 991.98,
+				settings: {
+					arrows: false,
+					speed: 900,
+					autoplaySpeed: 1800,
+					easing: true,
+				},
+			},
+		],
 	});
 }
 

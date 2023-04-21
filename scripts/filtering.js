@@ -110,7 +110,7 @@ function onFilterButtonClick(event) {
 		var card = cards[i];
 		var category = card.getAttribute('data-category');
 		if (filterValue === '*' || category === filterValue) {
-			card.style.display = 'block';
+			card.style.display = '';
 		} else {
 			card.style.display = 'none';
 		}

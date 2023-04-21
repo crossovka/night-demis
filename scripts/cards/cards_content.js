@@ -57,14 +57,15 @@ const data = [
 		img: './img/pdoduct_img.jpg',
 		imgAlt: 'Product Image 1',
 		name: 'Кепка арсенчика',
-		price: '69 4:20',
-		description: `ВСЕМ привет я леха и я веду свой канал пэлфи за 5 гривен `,
+		price: '69 4:20 ₽',
+		description: `ВСЕМ привет я леха и я веду свой канал пэлфи за 5 гривен. Таким образом реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации соответствующий условий активизации. С другой стороны дальнейшее развитие различных форм деятельности играет важную роль в формировании дальнейших направлений развития. 
+		Задача организации, в особенности же реализация намеченных плановых заданий требуют 
+		от нас анализа форм развития.`,
 		sizes: './img/logo.jpg',
 		images: [
 			'../img/pdoduct_img.jpg',
 			'../img/logo.jpg',
-			'../img/cart.svg',
-		],
+			'../img/cart.svg'],
 		category: 'category-1', // добавлено новое свойство category
 	},
 	{
@@ -72,14 +73,10 @@ const data = [
 		img: './img/cart.svg',
 		imgAlt: 'Product Image 1',
 		name: 'Трусы казаха',
-		price: '999',
+		price: '999 ₽',
 		description: `ЭЭЭЭЭЭ катах жи есть на рахате эль ме`,
 		sizes: './img/logo.jpg',
-		images: [
-			'../img/cart.svg',
-			'../img/pdoduct_img.jpg',
-			'../img/logo.jpg',
-		],
+		images: ['../img/cart.svg', '../img/pdoduct_img.jpg', '../img/logo.jpg'],
 		category: 'category-2', // добавлено новое свойство category
 	},
 	{
@@ -87,44 +84,32 @@ const data = [
 		img: './img/intro.png',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
-		price: '1 999',
+		price: '1 999 ₽',
 		description: `ЭЭЭЭЭЭ катах жи есть на рахате эль ме`,
 		sizes: './img/logo.jpg',
-		images: [
-			'../img/cart.svg',
-			'../img/pdoduct_img.jpg',
-			'../img/logo.jpg',
-		],
+		images: ['../img/cart.svg', '../img/pdoduct_img.jpg', '../img/logo.jpg'],
 		category: 'category-3', // добавлено новое свойство category
 	},
 	{
 		id: 4,
-		img: './img/pdoduct_img.jpg',
+		img: './img/close.png',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
-		price: '1 999',
+		price: '1 999 ₽',
 		description: `ЭЭЭЭЭЭ катах жи есть на рахате эль ме`,
 		sizes: './img/logo.jpg',
-		images: [
-			'../img/cart.svg',
-			'../img/pdoduct_img.jpg',
-			'../img/logo.jpg',
-		],
+		images: ['../img/cart.svg', '../img/pdoduct_img.jpg', '../img/logo.jpg'],
 		category: 'category-1', // добавлено новое свойство category
 	},
 	{
 		id: 5,
-		img: './img/cart.svg',
+		img: './img/prod.PNG',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
-		price: '1 999',
+		price: '1 999 ₽',
 		description: `ЭЭЭЭЭЭ катах жи есть на рахате эль ме`,
 		sizes: './img/logo.jpg',
-		images: [
-			'../img/cart.svg',
-			'../img/pdoduct_img.jpg',
-			'../img/logo.jpg',
-		],
+		images: ['../img/cart.svg', '../img/pdoduct_img.jpg', '../img/logo.jpg'],
 		category: 'category-2', // добавлено новое свойство category
 	},
 ];

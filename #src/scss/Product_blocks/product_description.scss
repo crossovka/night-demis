@@ -1,6 +1,6 @@
 .wrap {
 	&__description {
-		color: black;
+		color: $product-primary-f-color;
 
 		width: 50%;
 		height: 100%;
@@ -22,17 +22,21 @@
 	display: flex;
 	align-self: flex-start;
 	&__title {
+		text-align: center;
+		word-break: break-all;
 		// font-size: 50px;
-		font-size: calc(34px + (16 + 16 * 0.7) * ((100vw - 991.98px) / 1606));
-		font-weight: 900;
+		// font-size: calc(34px + (16 + 16 * 0.7) * ((100vw - 991.98px) / 1606));
+		@include adaptive-font(50, 34);
+		font-weight: $extra-bold-weight;
 	}
 
 	&__price {
 		margin-top: 1rem;
 
-		font-weight: 500;
+		font-weight: $medium-weight;
 		// font-size: 18px; 23 33
-		font-size: calc(23px + (10 + 10 * 0.7) * ((100vw - 991.98px) / 1606));
+		// font-size: calc(23px + (10 + 10 * 0.7) * ((100vw - 991.98px) / 1606));
+		@include adaptive-font(33, 23);
 	}
 }
 .button {
@@ -57,7 +61,8 @@
 		margin-top: 2rem;
 
 		// font-size: 40px;
-		font-size: calc(22px + (15 + 15 * 0.7) * ((100vw - 320px) / 1606));
+		// font-size: calc(22px + (15 + 15 * 0.7) * ((100vw - 320px) / 1606));
+		@include adaptive-font(33, 22);
 	}
 
 	&__sizes {

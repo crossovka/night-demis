@@ -4,13 +4,19 @@
 	// top: 0;
 	// left: 0;
 	// background-color: #fff;
-	background-color: #0000;
+
+	margin: 1rem 0 0;
+
 	width: 100%;
+
+	background-color: #0000;
+
 	z-index: 50;
 
 	&__inner {
-		height: 70px;
-		margin: 1rem 0;
+		height: 80px;
+		// margin: 1rem 0;
+		// background-color: #d18888;
 		width: 100%;
 		align-items: center;
 		display: flex;
@@ -54,7 +60,7 @@
 	&__link {
 		text-transform: capitalize;
 		font-style: normal;
-		font-weight: 900;
+		font-weight: $extra-bold-weight;
 		// font-size: 1.11rem;
 		// font-size: 28px;
 		/* минимальный значение шрифта,которое обнаружил в средствах разработки + 
@@ -72,7 +78,11 @@
 		transition: 0.3s linear;
 		color: #950101;
 		&:hover {
-			color: #ff0000;
+			@media #{$mouse-device} {
+				color: $secondary-f-hover-color;
+				user-select: none;
+				-webkit-tap-highlight-color: transparent;
+			}
 		}
 	}
 	&__link--cart {
