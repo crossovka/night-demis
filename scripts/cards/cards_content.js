@@ -65,7 +65,12 @@ const data = [
 		images: [
 			'../img/pdoduct_img.jpg',
 			'../img/logo.jpg',
-			'../img/cart.svg'],
+			'../img/cart.svg',
+			'../img/logo.jpg',
+			'../img/logo.jpg',
+			'../img/logo.jpg',
+			'../img/logo.jpg',
+			'../img/logo.jpg',],
 		category: 'category-1', // добавлено новое свойство category
 	},
 	{
@@ -111,6 +116,50 @@ const data = [
 		sizes: './img/logo.jpg',
 		images: ['../img/cart.svg', '../img/pdoduct_img.jpg', '../img/logo.jpg'],
 		category: 'category-2', // добавлено новое свойство category
+	},
+	{
+		id: 6,
+		img: './img/pdoduct_img.jpg',
+		imgAlt: 'Product Image 1',
+		name: 'Штаны семена 666',
+		price: '1 999 ₽',
+		description: `ЭЭЭЭЭЭ катах жи есть на рахате эль ме`,
+		sizes: './img/logo.jpg',
+		images: ['../img/cart.svg', '../img/pdoduct_img.jpg', '../img/logo.jpg'],
+		category: 'category-1', // добавлено новое свойство category
+	},
+	{
+		id: 7,
+		img: './img/pdoduct_img.jpg',
+		imgAlt: 'Product Image 1',
+		name: 'Штаны семена 666',
+		price: '1 999 ₽',
+		description: `ЭЭЭЭЭЭ катах жи есть на рахате эль ме`,
+		sizes: './img/logo.jpg',
+		images: ['../img/cart.svg', '../img/pdoduct_img.jpg', '../img/logo.jpg'],
+		category: 'category-2', // добавлено новое свойство category
+	},
+	{
+		id: 8,
+		img: './img/pdoduct_img.jpg',
+		imgAlt: 'Product Image 1',
+		name: 'Штаны семена 666',
+		price: '1 999 ₽',
+		description: `ЭЭЭЭЭЭ катах жи есть на рахате эль ме`,
+		sizes: './img/logo.jpg',
+		images: ['../img/cart.svg', '../img/pdoduct_img.jpg', '../img/logo.jpg'],
+		category: 'category-3', // добавлено новое свойство category
+	},
+	{
+		id: 9,
+		img: './img/pdoduct_img.jpg',
+		imgAlt: 'Product Image 1',
+		name: 'Штаны семена 666',
+		price: '1 999 ₽',
+		description: `ЭЭЭЭЭЭ катах жи есть на рахате эль ме`,
+		sizes: './img/logo.jpg',
+		images: ['../img/cart.svg', '../img/pdoduct_img.jpg', '../img/logo.jpg'],
+		category: 'category-1', // добавлено новое свойство category
 	},
 ];
 

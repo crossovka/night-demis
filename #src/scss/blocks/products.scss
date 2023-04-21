@@ -179,6 +179,9 @@
 		&:active {
 			color: $optional-f-active-color;
 		}
+		user-select: none;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-user-drag: none;
 	}
 }
 .filter__item.active {
@@ -232,7 +235,7 @@
 			object-fit: cover;
 			// object-position: center;
 
-			max-width: 100%;
+			min-width: 100%;
 			max-height: 100%;
 
 			display: block;

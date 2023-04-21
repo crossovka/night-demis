@@ -141,6 +141,7 @@
 
 	width: 20px;
 	height: 20px;
+	/* margin around dots */
 	margin: 0 5px;
 	padding: 0;
 
@@ -177,7 +178,8 @@
 
 .slick-dots li button:before {
 	font-family: 'slick';
-	font-size: 6px;
+	/* dots size */
+	font-size: 20px;
 	line-height: 20px;
 
 	position: absolute;
@@ -195,6 +197,12 @@
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 565.98px) {
+	.slick-dots li button:before {
+		font-size: 10px;
+	}
 }
 
 .slick-dots li.slick-active button:before {
