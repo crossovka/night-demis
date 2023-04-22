@@ -65,7 +65,7 @@ function fillProductInfo(id) {
 		arrows: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		// adaptiveHeight: true,
+		adaptiveHeight: true,
 		lazyLoad: 'ondemand',
 		lazyLoadBuffer: 0,
 		responsive: [
