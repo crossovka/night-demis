@@ -25,9 +25,12 @@
 
 html,
 body {
+	height: 100%;
+
 	font-family: $font-family;
 	font-size: 18px;
 	color: $primary-f-color;
+
 	background-color: $main-bgc-color;
 	// background-color: #ffffff;
 
@@ -37,10 +40,12 @@ body {
 	}
 }
 .wpapper {
+	min-height: 100vh;
+
 	overflow: hidden;
+
 	display: flex;
 	flex-direction: column;
-	min-height: 100%;
 	// overflow-x: hidden;
 }
 main {

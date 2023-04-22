@@ -1,16 +1,18 @@
 .intro {
+	min-height: 100vh;
 	// z-index: 999999;
 	// transform: translateY(-87px);
 	background-color: #0000;
 	// background-color: #eedcdc;
-	// background-image: url(../img/intro_img.jpg);
-	// background-position: center;
-	// background-repeat: no-repeat;
-	// background-size: cover;
-	min-height: 100vh;
+	background-image: url(../img/intro_img.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: center;
+
 	&__logo {
 		display: flex;
 		align-items: center;
@@ -41,7 +43,6 @@
 	}
 }
 .scroll-block {
-
 	&__scroll-content {
 		display: flex;
 		align-items: center;
@@ -55,7 +56,6 @@
 	}
 }
 .scroll-content {
-
 	&__scroll-mouse {
 	}
 

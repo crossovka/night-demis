@@ -79,7 +79,7 @@ function generate_card(id, img, imgAlt, name, price, category) {
 	article.dataset.category = category;
 	article.innerHTML = `
 	  <a href="./pages/ProductInfo.html?id=${id}" target="_blank" class="item__image">
-		<img src="${img}" alt="${imgAlt}">
+		<img src="${img}" alt="${imgAlt}" loading="lazy">
 	  </a>
 	  <div class="item__body">
 		<div class="body__name">${name}</div>
