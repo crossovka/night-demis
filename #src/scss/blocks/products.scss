@@ -226,6 +226,10 @@
 
 		padding: 0.3rem;
 
+		user-select: none;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-user-drag: none;
+
 		// position: relative;
 		img {
 			// position: absolute;

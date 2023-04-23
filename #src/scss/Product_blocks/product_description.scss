@@ -54,6 +54,10 @@
 		color: white;
 
 		background-color: black;
+
+		user-select: none;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-user-drag: none;
 	}
 }
 .content {

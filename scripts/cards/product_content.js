@@ -65,7 +65,6 @@ function fillProductInfo(id) {
 		arrows: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		adaptiveHeight: true,
 		lazyLoad: 'ondemand',
 		lazyLoadBuffer: 0,
 		responsive: [
@@ -74,8 +73,9 @@ function fillProductInfo(id) {
 				breakpoint: 991.98,
 				settings: {
 					arrows: false,
-					speed: 900,
-					autoplaySpeed: 1800,
+					adaptiveHeight: true,
+					// speed: 900,
+					// autoplaySpeed: 1800,
 					easing: true,
 				},
 			},
