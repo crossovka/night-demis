@@ -54,7 +54,7 @@ const data = [
 	{
 		id: 1,
 		// указывай путь к картинке в таком формате и относительно 2 странички html
-		img: './img/pdoduct_img.jpg',
+		img: './img/category_1/product_img.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Кепка арсенчика',
 		price: '69 4:20 ₽',
@@ -75,7 +75,7 @@ const data = [
 	},
 	{
 		id: 2,
-		img: './img/cart.svg',
+		img: './img/category_2/product_img.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Трусы казаха',
 		price: '999 ₽',
@@ -86,7 +86,7 @@ const data = [
 	},
 	{
 		id: 3,
-		img: './img/intro.png',
+		img: './img/category_3/product_img.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
 		price: '1 999 ₽',
@@ -97,7 +97,7 @@ const data = [
 	},
 	{
 		id: 4,
-		img: './img/close.png',
+		img: './img/category_1/product_img.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
 		price: '1 999 ₽',
@@ -108,7 +108,7 @@ const data = [
 	},
 	{
 		id: 5,
-		img: './img/prod.PNG',
+		img: './img/category_2/product_img.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
 		price: '1 999 ₽',
@@ -119,7 +119,7 @@ const data = [
 	},
 	{
 		id: 6,
-		img: './img/pdoduct_img.jpg',
+		img: './img/category_1/product_img.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
 		price: '1 999 ₽',
@@ -130,7 +130,7 @@ const data = [
 	},
 	{
 		id: 7,
-		img: './img/pdoduct_img.jpg',
+		img: './img/category_2/product_img.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
 		price: '1 999 ₽',
@@ -141,7 +141,7 @@ const data = [
 	},
 	{
 		id: 8,
-		img: './img/pdoduct_img.jpg',
+		img: './img/category_3/product_img.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
 		price: '1 999 ₽',
@@ -152,7 +152,7 @@ const data = [
 	},
 	{
 		id: 9,
-		img: './img/pdoduct_img.jpg',
+		img: './img/category_1/product_img.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
 		price: '1 999 ₽',
