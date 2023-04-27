@@ -76,7 +76,7 @@
 		line-height: 2.6;
 		letter-spacing: 0.1em;
 		transition: 0.3s linear;
-		color: #950101;
+		color: $secondary-f-color;
 		&:hover {
 			@media #{$mouse-device} {
 				color: $secondary-f-hover-color;
