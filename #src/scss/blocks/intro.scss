@@ -72,7 +72,21 @@
 		display: flex;
 		align-items: center;
 
+		@include adaptive-font(24, 10);
+
+		font-weight: $bold-weight;
+
 		color: $alt-f-color;
+
+		transition: 0.3s ease-in-out;
+		&:hover {
+			@media #{$mouse-device} {
+				color: $secondary-f-hover-color;
+			}
+		}
+		&:active {
+			color: $secondary-f-active-color;
+		}
 	}
 }
 
