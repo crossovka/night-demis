@@ -54,9 +54,9 @@
 
 		// font-size: 1.2rem;
 		@include adaptive-font(21, 18);
-		color: white;
+		color: $product-secondary-f-color;
 
-		background-color: black;
+		background-color: $product-btn-bgc-color;
 
 		// user-select: none;
 		// -webkit-tap-highlight-color: transparent;
