@@ -1,44 +1,10 @@
-// // Получите ID товара из URL-адреса:
-// const queryString = window.location.search;
-// const urlParams = new URLSearchParams(queryString);
-// const id = urlParams.get('id');
-
-// // Получаем элементы, в которые будем вставлять данные
-// const title = document.querySelector('.title-block__title');
-// const price = document.querySelector('.title-block__price');
-// const description = document.querySelector('.content__text');
-// const sizesImg = document.querySelector('.sizes__img');
-// const slider = document.querySelector('.slider');
-
-// // Находим товар в массиве data по его id
-// const product = data.find((item) => item.id === Number(id));
-
-// // Вставляем данные в соответствующие элементы
-// title.textContent = product.name;
-// price.textContent = product.price;
-// // description.textContent = 'Описание товара ' + product.name;
-// description.textContent = product.description;
-// sizesImg.src = product.sizes;
-// slider.innerHTML = `
-// <div class="slider__item">
-// <img src="${product.img}" alt="${product.imgAlt}">
-// </div>
-//   <div class="slider__item">
-//     <img src="${product.img}" alt="${product.imgAlt}">
-//   </div>
-//   <div class="slider__item">
-//   <img src="${product.img}" alt="${product.imgAlt}">
-//   </div>
-// `;
-
-// const pageTitle = 'Мой заголовок страницы';
-// document.title = pageTitle;
-
 const titleBlockTitle = document.querySelector('.title-block__title');
 const titleBlockPrice = document.querySelector('.title-block__price');
 const contentText = document.querySelector('.content__text');
 const sizesImg = document.querySelector('.sizes__img');
 const slidersSlider = document.querySelector('.sliders__slider');
+
+const buttonLink = document.querySelector('.button__btn');
 
 function fillProductInfo(id) {
 	// Находим объект товара по его ID
@@ -49,6 +15,10 @@ function fillProductInfo(id) {
 	titleBlockPrice.textContent = product.price;
 	contentText.textContent = product.description;
 	sizesImg.src = product.sizes;
+
+	// Добавляем ссылку на кнопку
+	buttonLink.setAttribute('href', product.link);
+	buttonLink.setAttribute('target', '_blank');
 
 	// Генерируем слайдер
 	slidersSlider.innerHTML = '';

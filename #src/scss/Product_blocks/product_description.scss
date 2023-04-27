@@ -43,6 +43,8 @@
 	&__btn {
 		margin-top: 1rem;
 
+		width: fit-content; 
+
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -50,14 +52,15 @@
 		padding: 10px;
 		border-radius: 15px;
 
-		font-size: 1.2rem;
+		// font-size: 1.2rem;
+		@include adaptive-font(21, 18);
 		color: white;
 
 		background-color: black;
 
-		user-select: none;
-		-webkit-tap-highlight-color: transparent;
-		-webkit-user-drag: none;
+		// user-select: none;
+		// -webkit-tap-highlight-color: transparent;
+		// -webkit-user-drag: none;
 	}
 }
 .content {
