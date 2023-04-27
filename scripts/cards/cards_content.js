@@ -54,7 +54,7 @@ const data = [
 	{
 		id: 1,
 		// указывай путь к картинке в таком формате и относительно 2 странички html
-		img: './img/category_1/product_img.webp',
+		img: './img/category1/poduct.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Кепка арсенчика',
 		price: '69 4:20 ₽',
@@ -70,12 +70,13 @@ const data = [
 			'../img/logo.jpg',
 			'../img/logo.jpg',
 			'../img/logo.jpg',
-			'../img/logo.jpg',],
+			'../img/logo.jpg',
+		],
 		category: 'category-1', // добавлено новое свойство category
 	},
 	{
 		id: 2,
-		img: './img/category_2/product_img.webp',
+		img: './img/category2/poduct.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Трусы казаха',
 		price: '999 ₽',
@@ -86,18 +87,18 @@ const data = [
 	},
 	{
 		id: 3,
-		img: './img/category_3/product_img.webp',
+		img: './img/category2/poduct.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
 		price: '1 999 ₽',
 		description: `ЭЭЭЭЭЭ катах жи есть на рахате эль ме`,
 		sizes: './img/logo.jpg',
 		images: ['../img/cart.svg', '../img/pdoduct_img.jpg', '../img/logo.jpg'],
-		category: 'category-3', // добавлено новое свойство category
+		category: 'category-2', // добавлено новое свойство category
 	},
 	{
 		id: 4,
-		img: './img/category_1/product_img.webp',
+		img: './img/category1/poduct.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
 		price: '1 999 ₽',
@@ -108,7 +109,7 @@ const data = [
 	},
 	{
 		id: 5,
-		img: './img/category_2/product_img.webp',
+		img: './img/category2/poduct.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
 		price: '1 999 ₽',
@@ -119,7 +120,7 @@ const data = [
 	},
 	{
 		id: 6,
-		img: './img/category_1/product_img.webp',
+		img: './img/category1/poduct.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
 		price: '1 999 ₽',
@@ -130,7 +131,7 @@ const data = [
 	},
 	{
 		id: 7,
-		img: './img/category_2/product_img.webp',
+		img: './img/category2/poduct.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
 		price: '1 999 ₽',
@@ -141,18 +142,18 @@ const data = [
 	},
 	{
 		id: 8,
-		img: './img/category_3/product_img.webp',
+		img: './img/category1/poduct.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
 		price: '1 999 ₽',
 		description: `ЭЭЭЭЭЭ катах жи есть на рахате эль ме`,
 		sizes: './img/logo.jpg',
 		images: ['../img/cart.svg', '../img/pdoduct_img.jpg', '../img/logo.jpg'],
-		category: 'category-3', // добавлено новое свойство category
+		category: 'category-1', // добавлено новое свойство category
 	},
 	{
 		id: 9,
-		img: './img/category_1/product_img.webp',
+		img: './img/category1/poduct.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Штаны семена 666',
 		price: '1 999 ₽',
