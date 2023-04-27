@@ -1,7 +1,7 @@
 .intro {
 	min-height: 100vh;
 	// z-index: 999999;
-	transform: translateY(-88px);
+	// transform: translateY(-88px);
 	// background-color: #fff;
 	// background-color: #eedcdc;
 	// background-image: url(../img/intro_img.jpg);
@@ -38,12 +38,13 @@
 	&__scroll-block {
 		width: 100%;
 
-		padding: 2.5rem 0;
+		// padding: 2.5rem 0;
+
+		transform: translateY(-80px);
 
 		user-select: none;
 		-webkit-tap-highlight-color: transparent;
 		-webkit-user-drag: none;
-		// background-color: #975959;
 	}
 }
 .scroll-block {
