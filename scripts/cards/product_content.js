@@ -36,6 +36,7 @@ function fillProductInfo(id) {
 		slidesToScroll: 1,
 		lazyLoad: 'ondemand',
 		lazyLoadBuffer: 0,
+		adaptiveHeight: true,
 		responsive: [
 			{
 				// мобилки

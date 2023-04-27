@@ -12,14 +12,8 @@ const data = [
 		link: 'https://vk.com/nightdemis?w=product-220079627_8276645',
 		sizes: './img/logo.jpg',
 		images: [
-			'../img/category1/poduct.webp',
-			'../img/category1/poduct.webp',
-			'../img/category1/poduct.webp',
-			'../img/category1/poduct.webp',
-			'../img/category1/poduct.webp',
-			'../img/category1/poduct.webp',
-			'../img/category1/poduct.webp',
-			'../img/category1/poduct.webp',
+			'../img/category1/1.webp',
+			'../img/category1/2.webp',
 		],
 		category: 'category-1', // добавлено новое свойство category
 	},
