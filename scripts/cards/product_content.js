@@ -18,7 +18,6 @@ function fillProductInfo(id) {
 
 	// Добавляем ссылку на кнопку
 	buttonLink.setAttribute('href', product.link);
-	buttonLink.setAttribute('target', '_blank');
 
 	// Генерируем слайдер
 	slidersSlider.innerHTML = '';
