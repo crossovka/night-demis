@@ -2,7 +2,59 @@ const data = [
 	{
 		id: 1,
 		// указывай путь к картинке в таком формате и относительно 2 странички html
-		img: './img/category1/poduct.webp',
+		img: './img/category1/2.webp',
+		imgAlt: 'Product Image 1',
+		name: 'Футболка "грешник"',
+		price: '1799 ₽',
+
+		descriptionOne: `
+		— Доступны размеры: M, XL, XXL 
+		— Принт выполнен качественной dtf технологией`,
+
+		descriptionTwo:`
+		— Футболка 100% хлопок, оверсайз
+		Таблица размеров на последней фотографии`,
+		descriptionThree:`
+		Уход: 
+		Стирать при 30 градусах и наизнанку`,
+	
+		link: 'https://vk.com/nightdemis?w=product-220079627_8276645',
+		sizes: './img/logo.jpg',
+		images: [
+			'../img/category1/2.webp',
+			'../img/category1/4.webp',
+			'../img/category1/1.webp',
+			'../img/category1/3.webp',
+			'../img/category1/размерный лист.webp',
+		],
+		category: 'category-1', // добавлено новое свойство category
+	},
+
+	{
+		id: 2,
+		// указывай путь к картинке в таком формате и относительно 2 странички html
+		img: './img/category1/5.webp',
+		imgAlt: 'Product Image 1',
+		name: 'Кепка арсенчика',
+		price: '69 ₽',
+		description: `ВСЕМ привет я леха и я веду свой канал пэлфи за 5 гривен.Таким образом реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации соответствующий условий активизации. 
+		С другой стороны дальнейшее развитие различных форм деятельности играет важную роль в формировании дальнейших направлений развития. 
+		Задача организации, в особенности же реализация намеченных плановых заданий требуют 
+		от нас анализа форм развития.`,
+		link: 'https://vk.com/nightdemis?w=product-220079627_8276645',
+		sizes: './img/logo.jpg',
+		images: [
+			'../img/category1/5.webp',
+			'../img/category1/6.webp',
+			'../img/category1/размерный лист.webp',
+		],
+		category: 'category-1', // добавлено новое свойство category
+	},
+
+	{
+		id: 3,
+		// указывай путь к картинке в таком формате и относительно 2 странички html
+		img: './img/category1/8.webp',
 		imgAlt: 'Product Image 1',
 		name: 'Кепка арсенчика',
 		price: '69 ₽',
@@ -12,12 +64,34 @@ const data = [
 		link: 'https://vk.com/nightdemis?w=product-220079627_8276645',
 		sizes: './img/logo.jpg',
 		images: [
-			'../img/category1/1.webp',
-			'../img/category1/2.webp',
+			'../img/category1/8.webp',
+			'../img/category1/7.webp',
+			'../img/category1/9.webp',
+			'../img/category1/10.webp',
+			'../img/category1/размерный лист.webp',
 		],
 		category: 'category-1', // добавлено новое свойство category
 	},
 
+	{
+		id: 4,
+		// указывай путь к картинке в таком формате и относительно 2 странички html
+		img: './img/category1/12.webp',
+		imgAlt: 'Product Image 1',
+		name: 'Кепка арсенчика',
+		price: '69 ₽',
+		description: `ВСЕМ привет я леха и я веду свой канал пэлфи за 5 гривен. Таким образом реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации соответствующий условий активизации. С другой стороны дальнейшее развитие различных форм деятельности играет важную роль в формировании дальнейших направлений развития. 
+		Задача организации, в особенности же реализация намеченных плановых заданий требуют 
+		от нас анализа форм развития.`,
+		link: 'https://vk.com/nightdemis?w=product-220079627_8276645',
+		sizes: './img/logo.jpg',
+		images: [
+			'../img/category1/12.webp',
+			'../img/category1/11.webp',
+			'../img/category1/размерный лист.webp',
+		],
+		category: 'category-1', // добавлено новое свойство category
+	},
 ];
 
 for (const item of data) {

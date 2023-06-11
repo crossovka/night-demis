@@ -1,6 +1,11 @@
 const titleBlockTitle = document.querySelector('.title-block__title');
 const titleBlockPrice = document.querySelector('.title-block__price');
-const contentText = document.querySelector('.content__text');
+
+// const contentText = document.querySelector('.content__text');
+const contentTextOne = document.getElementById('one')
+const contentTextTwo = document.getElementById('two')
+const contentTextThree = document.getElementById('three')
+
 const sizesImg = document.querySelector('.sizes__img');
 const slidersSlider = document.querySelector('.sliders__slider');
 
@@ -13,7 +18,11 @@ function fillProductInfo(id) {
 	// Заполняем информацию на странице
 	titleBlockTitle.textContent = product.name;
 	titleBlockPrice.textContent = product.price;
-	contentText.textContent = product.description;
+
+	contentTextOne.textContent = product.descriptionOne;
+	contentTextTwo.textContent = product.descriptionTwo;
+	contentTextThree.textContent = product.descriptionThree;
+
 	sizesImg.src = product.sizes;
 
 	// Добавляем ссылку на кнопку

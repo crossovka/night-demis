@@ -92,7 +92,7 @@ function generate_card(id, img, imgAlt, name, price, category) {
 {
 	/* <a href="./pages/ProductInfo.html?id=${id}" target="_blank" class="body__name">${name}</a>*/
 }
-// ВНУТРЕННЯЯ БАЗА ДАННЫХ ПРОЕКТОВ!!!
+
 class Cards {
 	_cards;
 	constructor() {

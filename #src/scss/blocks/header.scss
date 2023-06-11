@@ -115,9 +115,12 @@
 // }
 // ----------------
 
-.header__menu {
-	// padding-right: 50px;
-	margin-left: -0.55rem;
+.menu__list {
+	&::before {
+		content: '';
+		display: block;
+		margin-right: -0.55rem;
+	}
 }
 .menu__list li {
 	margin-left: 0.55rem;
